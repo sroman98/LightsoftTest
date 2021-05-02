@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitledView" customModule="LightsoftTest" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="SxN-J1-o3t" id="Mfk-Ke-FTV"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="sBr-cO-LZ5"/>
+                <outlet property="titleLabel" destination="291-Ap-dnh" id="Xof-e5-1Ty"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="228"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="SxN-J1-o3t" userLabel="Background Image">
+                    <rect key="frame" x="0.0" y="0.0" width="412" height="228"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sweaters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="291-Ap-dnh" userLabel="Title Label">
+                    <rect key="frame" x="8" y="175" width="396" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="291-Ap-dnh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="5tN-MO-J1w"/>
+                <constraint firstItem="SxN-J1-o3t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Agh-lL-PcR"/>
+                <constraint firstItem="SxN-J1-o3t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Blb-ru-Xyh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="291-Ap-dnh" secondAttribute="trailing" constant="8" id="ges-7D-WrJ"/>
+                <constraint firstAttribute="trailing" secondItem="SxN-J1-o3t" secondAttribute="trailing" id="uWs-AK-MBL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="291-Ap-dnh" secondAttribute="bottom" constant="24" id="xYI-bw-XjU"/>
+                <constraint firstAttribute="bottom" secondItem="SxN-J1-o3t" secondAttribute="bottom" id="zoP-cs-vWR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-169.56521739130437" y="-281.91964285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image1" width="477.5" height="612.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
